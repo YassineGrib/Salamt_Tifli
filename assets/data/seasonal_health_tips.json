@@ -1,0 +1,154 @@
+{
+  "tips": [
+    {
+      "id": "summer_heat_protection",
+      "title": "الحماية من حرارة الصيف",
+      "content": "في فصل الصيف، احرص على إبقاء طفلك في الظل وإعطاؤه الكثير من السوائل. تجنب الخروج في أوقات الذروة (11 صباحاً - 4 مساءً).",
+      "season": "summer",
+      "startMonth": 6,
+      "endMonth": 8,
+      "icon": "wb_sunny",
+      "color": "#FF9800",
+      "ageGroups": ["infant", "toddler", "preschool", "school"]
+    },
+    {
+      "id": "summer_hydration",
+      "title": "الترطيب في الصيف",
+      "content": "أعط طفلك الماء بانتظام حتى لو لم يطلب. للرضع أقل من 6 أشهر، الرضاعة الطبيعية كافية. للأطفال الأكبر، قدم الماء والعصائر الطبيعية.",
+      "season": "summer",
+      "startMonth": 6,
+      "endMonth": 8,
+      "icon": "local_drink",
+      "color": "#2196F3",
+      "ageGroups": ["infant", "toddler", "preschool", "school"]
+    },
+    {
+      "id": "summer_skin_protection",
+      "title": "حماية البشرة من الشمس",
+      "content": "استخدم واقي الشمس للأطفال فوق 6 أشهر (SPF 30+). ألبس طفلك ملابس فاتحة اللون وقبعة. تجنب التعرض المباشر للشمس للرضع.",
+      "season": "summer",
+      "startMonth": 6,
+      "endMonth": 8,
+      "icon": "beach_access",
+      "color": "#FF5722",
+      "ageGroups": ["toddler", "preschool", "school"]
+    },
+    {
+      "id": "winter_warmth",
+      "title": "الدفء في الشتاء",
+      "content": "ألبس طفلك طبقات من الملابس الدافئة. تأكد من تغطية الرأس واليدين والقدمين. تجنب الملابس الضيقة جداً أو الفضفاضة جداً.",
+      "season": "winter",
+      "startMonth": 12,
+      "endMonth": 2,
+      "icon": "ac_unit",
+      "color": "#607D8B",
+      "ageGroups": ["infant", "toddler", "preschool", "school"]
+    },
+    {
+      "id": "winter_indoor_air",
+      "title": "جودة الهواء في الشتاء",
+      "content": "حافظ على رطوبة الهواء في المنزل (40-60%). تهوية المنزل يومياً لتجديد الهواء. تجنب استخدام المدافئ في غرفة نوم الطفل.",
+      "season": "winter",
+      "startMonth": 12,
+      "endMonth": 2,
+      "icon": "air",
+      "color": "#9E9E9E",
+      "ageGroups": ["infant", "toddler", "preschool", "school"]
+    },
+    {
+      "id": "winter_immunity",
+      "title": "تقوية المناعة في الشتاء",
+      "content": "أعط طفلك الأطعمة الغنية بفيتامين C (البرتقال، الكيوي). تأكد من حصوله على قسط كافٍ من النوم. اغسل اليدين بانتظام.",
+      "season": "winter",
+      "startMonth": 12,
+      "endMonth": 2,
+      "icon": "health_and_safety",
+      "color": "#4CAF50",
+      "ageGroups": ["toddler", "preschool", "school"]
+    },
+    {
+      "id": "spring_allergies",
+      "title": "الحساسية الموسمية في الربيع",
+      "content": "راقب أعراض الحساسية (العطس، حكة العيون). أغلق النوافذ في أيام الرياح العالية. استحم طفلك بعد اللعب في الخارج.",
+      "season": "spring",
+      "startMonth": 3,
+      "endMonth": 5,
+      "icon": "local_florist",
+      "color": "#E91E63",
+      "ageGroups": ["toddler", "preschool", "school"]
+    },
+    {
+      "id": "spring_outdoor_safety",
+      "title": "السلامة في الهواء الطلق - الربيع",
+      "content": "فحص الملاعب والحدائق من الأخطار بعد الشتاء. تأكد من سلامة الأراجيح والألعاب. علم طفلك عدم لمس النباتات المجهولة.",
+      "season": "spring",
+      "startMonth": 3,
+      "endMonth": 5,
+      "icon": "park",
+      "color": "#8BC34A",
+      "ageGroups": ["toddler", "preschool", "school"]
+    },
+    {
+      "id": "autumn_clothing",
+      "title": "الملابس المناسبة للخريف",
+      "content": "ألبس طفلك ملابس متعددة الطبقات للتكيف مع تغيرات الطقس. احتفظ بسترة خفيفة في السيارة أو الحقيبة.",
+      "season": "autumn",
+      "startMonth": 9,
+      "endMonth": 11,
+      "icon": "checkroom",
+      "color": "#FF9800",
+      "ageGroups": ["infant", "toddler", "preschool", "school"]
+    },
+    {
+      "id": "autumn_nutrition",
+      "title": "التغذية في الخريف",
+      "content": "أكثر من الأطعمة الغنية بفيتامين D (الأسماك، البيض). قدم الفواكه الموسمية (التفاح، الرمان). حافظ على نظام غذائي متوازن.",
+      "season": "autumn",
+      "startMonth": 9,
+      "endMonth": 11,
+      "icon": "restaurant",
+      "color": "#795548",
+      "ageGroups": ["toddler", "preschool", "school"]
+    },
+    {
+      "id": "ramadan_fasting_children",
+      "title": "الأطفال في رمضان",
+      "content": "لا يُنصح بصيام الأطفال تحت 10 سنوات. للأطفال الأكبر، ابدأ تدريجياً. تأكد من تناول وجبة سحور مغذية وإفطار متوازن.",
+      "season": "special",
+      "startMonth": 0,
+      "endMonth": 0,
+      "icon": "nightlight",
+      "color": "#673AB7",
+      "ageGroups": ["school"]
+    },
+    {
+      "id": "school_year_preparation",
+      "title": "الاستعداد للعام الدراسي",
+      "content": "تدرج في تعديل مواعيد النوم قبل أسبوعين من المدرسة. تأكد من اكتمال التطعيمات المطلوبة. حضر حقيبة إسعافات أولية للمدرسة.",
+      "season": "special",
+      "startMonth": 8,
+      "endMonth": 9,
+      "icon": "school",
+      "color": "#3F51B5",
+      "ageGroups": ["preschool", "school"]
+    }
+  ],
+  "ageGroupDefinitions": {
+    "infant": {
+      "name": "رضيع",
+      "ageRange": "0-12 شهر"
+    },
+    "toddler": {
+      "name": "طفل صغير",
+      "ageRange": "1-3 سنوات"
+    },
+    "preschool": {
+      "name": "ما قبل المدرسة",
+      "ageRange": "3-5 سنوات"
+    },
+    "school": {
+      "name": "سن المدرسة",
+      "ageRange": "5+ سنوات"
+    }
+  }
+}

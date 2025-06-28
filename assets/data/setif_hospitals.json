@@ -1,0 +1,185 @@
+{
+  "city": "سطيف",
+  "country": "الجزائر",
+  "lastUpdated": "2024-12-19",
+  "emergencyNumbers": {
+    "generalEmergency": "14",
+    "redCrescent": "1021",
+    "civilProtection": "14",
+    "police": "1548"
+  },
+  "hospitals": [
+    {
+      "id": "setif_chu",
+      "name": "CHU Setif",
+      "nameArabic": "المستشفى الجامعي سطيف",
+      "type": "public",
+      "specialties": ["طب الأطفال", "الطوارئ", "الجراحة", "الولادة"],
+      "hasPediatric": true,
+      "hasEmergency": true,
+      "address": "شارع العربي بن مهيدي، سطيف",
+      "phone": "036 92 75 00",
+      "emergencyPhone": "036 92 75 15",
+      "latitude": 36.1833,
+      "longitude": 5.4167,
+      "workingHours": {
+        "emergency": "24/7",
+        "general": "08:00-17:00"
+      }
+    },
+    {
+      "id": "setif_pediatric",
+      "name": "Pediatric Hospital Setif",
+      "nameArabic": "مستشفى الأطفال سطيف",
+      "type": "public",
+      "specialties": ["طب الأطفال", "جراحة الأطفال", "طوارئ الأطفال"],
+      "hasPediatric": true,
+      "hasEmergency": true,
+      "address": "حي الهضاب، سطيف",
+      "phone": "036 84 21 30",
+      "emergencyPhone": "036 84 21 35",
+      "latitude": 36.1900,
+      "longitude": 5.4200,
+      "workingHours": {
+        "emergency": "24/7",
+        "general": "08:00-16:00"
+      }
+    },
+    {
+      "id": "clinic_ibn_sina",
+      "name": "Ibn Sina Clinic",
+      "nameArabic": "عيادة ابن سينا",
+      "type": "private",
+      "specialties": ["طب الأطفال", "الطب العام", "الأشعة"],
+      "hasPediatric": true,
+      "hasEmergency": false,
+      "address": "شارع الاستقلال، سطيف",
+      "phone": "036 66 45 78",
+      "latitude": 36.1850,
+      "longitude": 5.4150,
+      "workingHours": {
+        "general": "08:00-20:00"
+      }
+    },
+    {
+      "id": "polyclinic_1000_logements",
+      "name": "Polyclinic 1000 Logements",
+      "nameArabic": "العيادة المتعددة الخدمات 1000 مسكن",
+      "type": "public",
+      "specialties": ["طب الأطفال", "الطب العام", "التطعيمات"],
+      "hasPediatric": true,
+      "hasEmergency": false,
+      "address": "حي 1000 مسكن، سطيف",
+      "phone": "036 72 18 90",
+      "latitude": 36.1750,
+      "longitude": 5.4100,
+      "workingHours": {
+        "general": "08:00-16:00"
+      }
+    },
+    {
+      "id": "clinic_el_amel",
+      "name": "El Amel Clinic",
+      "nameArabic": "عيادة الأمل",
+      "type": "private",
+      "specialties": ["طب الأطفال", "الجراحة", "النساء والولادة"],
+      "hasPediatric": true,
+      "hasEmergency": true,
+      "address": "شارع الجمهورية، سطيف",
+      "phone": "036 55 32 10",
+      "emergencyPhone": "036 55 32 15",
+      "latitude": 36.1880,
+      "longitude": 5.4180,
+      "workingHours": {
+        "emergency": "24/7",
+        "general": "08:00-22:00"
+      }
+    },
+    {
+      "id": "hospital_ain_arnat",
+      "name": "Ain Arnat Hospital",
+      "nameArabic": "مستشفى عين أرنات",
+      "type": "public",
+      "specialties": ["الطب العام", "طب الأطفال", "الطوارئ"],
+      "hasPediatric": true,
+      "hasEmergency": true,
+      "address": "عين أرنات، سطيف",
+      "phone": "036 78 45 20",
+      "emergencyPhone": "036 78 45 25",
+      "latitude": 36.1650,
+      "longitude": 5.3950,
+      "workingHours": {
+        "emergency": "24/7",
+        "general": "08:00-16:00"
+      }
+    },
+    {
+      "id": "clinic_el_hidhab",
+      "name": "El Hidhab Medical Center",
+      "nameArabic": "المركز الطبي الهضاب",
+      "type": "private",
+      "specialties": ["طب الأطفال", "الطب العام", "طب الأسنان"],
+      "hasPediatric": true,
+      "hasEmergency": false,
+      "address": "حي الهضاب الجديدة، سطيف",
+      "phone": "036 91 23 45",
+      "latitude": 36.1920,
+      "longitude": 5.4250,
+      "workingHours": {
+        "general": "09:00-19:00"
+      }
+    },
+    {
+      "id": "hospital_el_eulma",
+      "name": "El Eulma Hospital",
+      "nameArabic": "مستشفى العلمة",
+      "type": "public",
+      "specialties": ["الطب العام", "طب الأطفال", "الجراحة"],
+      "hasPediatric": true,
+      "hasEmergency": true,
+      "address": "العلمة، سطيف",
+      "phone": "036 45 67 80",
+      "emergencyPhone": "036 45 67 85",
+      "latitude": 36.1500,
+      "longitude": 5.6900,
+      "workingHours": {
+        "emergency": "24/7",
+        "general": "08:00-16:00"
+      }
+    },
+    {
+      "id": "clinic_beni_aziz",
+      "name": "Beni Aziz Medical Center",
+      "nameArabic": "المركز الطبي بني عزيز",
+      "type": "private",
+      "specialties": ["طب الأطفال", "الطب العام"],
+      "hasPediatric": true,
+      "hasEmergency": false,
+      "address": "بني عزيز، سطيف",
+      "phone": "036 89 12 34",
+      "latitude": 36.2100,
+      "longitude": 5.4500,
+      "workingHours": {
+        "general": "08:00-18:00"
+      }
+    },
+    {
+      "id": "hospital_bougaa",
+      "name": "Bougaa Hospital",
+      "nameArabic": "مستشفى بوقاعة",
+      "type": "public",
+      "specialties": ["الطب العام", "طب الأطفال", "النساء والولادة"],
+      "hasPediatric": true,
+      "hasEmergency": true,
+      "address": "بوقاعة، سطيف",
+      "phone": "036 77 89 10",
+      "emergencyPhone": "036 77 89 15",
+      "latitude": 36.3300,
+      "longitude": 5.0800,
+      "workingHours": {
+        "emergency": "24/7",
+        "general": "08:00-16:00"
+      }
+    }
+  ]
+}

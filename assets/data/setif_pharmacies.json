@@ -1,0 +1,213 @@
+{
+  "city": "سطيف",
+  "country": "الجزائر",
+  "lastUpdated": "2024-12-19",
+  "nightServiceSchedule": {
+    "rotation": "أسبوعي",
+    "infoPhone": "036 66 77 88",
+    "description": "تتناوب الصيدليات على الخدمة الليلية أسبوعياً. اتصل بالرقم المذكور للاستعلام عن الصيدلية المناوبة."
+  },
+  "pharmacies": [
+    {
+      "id": "pharmacy_central",
+      "name": "Central Pharmacy",
+      "nameArabic": "الصيدلية المركزية",
+      "address": "شارع الاستقلال، وسط المدينة، سطيف",
+      "phone": "036 66 12 34",
+      "latitude": 36.1833,
+      "longitude": 5.4167,
+      "workingHours": {
+        "monday": "08:00-19:00",
+        "tuesday": "08:00-19:00",
+        "wednesday": "08:00-19:00",
+        "thursday": "08:00-19:00",
+        "friday": "08:00-12:00, 14:00-19:00",
+        "saturday": "08:00-19:00",
+        "sunday": "09:00-12:00"
+      },
+      "nightService": true,
+      "emergencyService": true
+    },
+    {
+      "id": "pharmacy_ibn_sina",
+      "name": "Ibn Sina Pharmacy",
+      "nameArabic": "صيدلية ابن سينا",
+      "address": "حي الهضاب، سطيف",
+      "phone": "036 84 56 78",
+      "latitude": 36.1900,
+      "longitude": 5.4200,
+      "workingHours": {
+        "monday": "08:00-20:00",
+        "tuesday": "08:00-20:00",
+        "wednesday": "08:00-20:00",
+        "thursday": "08:00-20:00",
+        "friday": "08:00-12:00, 14:00-20:00",
+        "saturday": "08:00-20:00",
+        "sunday": "مغلقة"
+      },
+      "nightService": false,
+      "emergencyService": false
+    },
+    {
+      "id": "pharmacy_el_amel",
+      "name": "El Amel Pharmacy",
+      "nameArabic": "صيدلية الأمل",
+      "address": "شارع الجمهورية، سطيف",
+      "phone": "036 55 43 21",
+      "latitude": 36.1880,
+      "longitude": 5.4180,
+      "workingHours": {
+        "monday": "08:00-19:30",
+        "tuesday": "08:00-19:30",
+        "wednesday": "08:00-19:30",
+        "thursday": "08:00-19:30",
+        "friday": "08:00-12:00, 14:00-19:30",
+        "saturday": "08:00-19:30",
+        "sunday": "09:00-13:00"
+      },
+      "nightService": true,
+      "emergencyService": true
+    },
+    {
+      "id": "pharmacy_1000_logements",
+      "name": "1000 Logements Pharmacy",
+      "nameArabic": "صيدلية 1000 مسكن",
+      "address": "حي 1000 مسكن، سطيف",
+      "phone": "036 72 98 76",
+      "latitude": 36.1750,
+      "longitude": 5.4100,
+      "workingHours": {
+        "monday": "08:00-18:00",
+        "tuesday": "08:00-18:00",
+        "wednesday": "08:00-18:00",
+        "thursday": "08:00-18:00",
+        "friday": "08:00-12:00, 14:00-18:00",
+        "saturday": "08:00-18:00",
+        "sunday": "مغلقة"
+      },
+      "nightService": false,
+      "emergencyService": false
+    },
+    {
+      "id": "pharmacy_el_hidhab",
+      "name": "El Hidhab Pharmacy",
+      "nameArabic": "صيدلية الهضاب",
+      "address": "حي الهضاب الجديدة، سطيف",
+      "phone": "036 91 87 65",
+      "latitude": 36.1920,
+      "longitude": 5.4250,
+      "workingHours": {
+        "monday": "08:30-19:00",
+        "tuesday": "08:30-19:00",
+        "wednesday": "08:30-19:00",
+        "thursday": "08:30-19:00",
+        "friday": "08:30-12:00, 14:00-19:00",
+        "saturday": "08:30-19:00",
+        "sunday": "09:00-12:00"
+      },
+      "nightService": false,
+      "emergencyService": false
+    },
+    {
+      "id": "pharmacy_ain_arnat",
+      "name": "Ain Arnat Pharmacy",
+      "nameArabic": "صيدلية عين أرنات",
+      "address": "عين أرنات، سطيف",
+      "phone": "036 78 54 32",
+      "latitude": 36.1650,
+      "longitude": 5.3950,
+      "workingHours": {
+        "monday": "08:00-18:30",
+        "tuesday": "08:00-18:30",
+        "wednesday": "08:00-18:30",
+        "thursday": "08:00-18:30",
+        "friday": "08:00-12:00, 14:00-18:30",
+        "saturday": "08:00-18:30",
+        "sunday": "مغلقة"
+      },
+      "nightService": true,
+      "emergencyService": true
+    },
+    {
+      "id": "pharmacy_el_eulma",
+      "name": "El Eulma Pharmacy",
+      "nameArabic": "صيدلية العلمة",
+      "address": "العلمة، سطيف",
+      "phone": "036 45 76 89",
+      "latitude": 36.1500,
+      "longitude": 5.6900,
+      "workingHours": {
+        "monday": "08:00-18:00",
+        "tuesday": "08:00-18:00",
+        "wednesday": "08:00-18:00",
+        "thursday": "08:00-18:00",
+        "friday": "08:00-12:00, 14:00-18:00",
+        "saturday": "08:00-18:00",
+        "sunday": "مغلقة"
+      },
+      "nightService": false,
+      "emergencyService": false
+    },
+    {
+      "id": "pharmacy_bougaa",
+      "name": "Bougaa Pharmacy",
+      "nameArabic": "صيدلية بوقاعة",
+      "address": "بوقاعة، سطيف",
+      "phone": "036 77 65 43",
+      "latitude": 36.3300,
+      "longitude": 5.0800,
+      "workingHours": {
+        "monday": "08:00-17:30",
+        "tuesday": "08:00-17:30",
+        "wednesday": "08:00-17:30",
+        "thursday": "08:00-17:30",
+        "friday": "08:00-12:00, 14:00-17:30",
+        "saturday": "08:00-17:30",
+        "sunday": "مغلقة"
+      },
+      "nightService": false,
+      "emergencyService": false
+    },
+    {
+      "id": "pharmacy_weekend_1",
+      "name": "Weekend Pharmacy 1",
+      "nameArabic": "صيدلية نهاية الأسبوع 1",
+      "address": "شارع العربي بن مهيدي، سطيف",
+      "phone": "036 88 99 00",
+      "latitude": 36.1840,
+      "longitude": 5.4160,
+      "workingHours": {
+        "monday": "مغلقة",
+        "tuesday": "مغلقة",
+        "wednesday": "مغلقة",
+        "thursday": "مغلقة",
+        "friday": "14:00-19:00",
+        "saturday": "08:00-19:00",
+        "sunday": "08:00-19:00"
+      },
+      "nightService": false,
+      "emergencyService": false,
+      "weekendOnly": true
+    },
+    {
+      "id": "pharmacy_night_service",
+      "name": "Night Service Pharmacy",
+      "nameArabic": "صيدلية الخدمة الليلية",
+      "address": "شارع الثورة، سطيف",
+      "phone": "036 77 88 99",
+      "latitude": 36.1860,
+      "longitude": 5.4190,
+      "workingHours": {
+        "monday": "20:00-08:00",
+        "tuesday": "20:00-08:00",
+        "wednesday": "20:00-08:00",
+        "thursday": "20:00-08:00",
+        "friday": "20:00-08:00",
+        "saturday": "20:00-08:00",
+        "sunday": "20:00-08:00"
+      },
+      "nightService": true,
+      "emergencyService": true
+    }
+  ]
+}

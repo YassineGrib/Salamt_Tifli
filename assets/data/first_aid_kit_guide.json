@@ -1,0 +1,268 @@
+{
+  "title": "دليل حقيبة الإسعافات الأولية",
+  "description": "دليل شامل لإعداد حقيبة إسعافات أولية مناسبة للأطفال في المنزل والسفر",
+  "categories": [
+    {
+      "id": "basic_supplies",
+      "name": "المستلزمات الأساسية",
+      "icon": "medical_services",
+      "color": "#4CAF50",
+      "items": [
+        {
+          "name": "ضمادات معقمة",
+          "nameArabic": "ضمادات معقمة",
+          "quantity": "10-15 قطعة",
+          "sizes": ["صغيرة (2×2 سم)", "متوسطة (5×5 سم)", "كبيرة (10×10 سم)"],
+          "purpose": "لتغطية الجروح والخدوش",
+          "essential": true,
+          "childSpecific": false
+        },
+        {
+          "name": "شاش طبي",
+          "nameArabic": "شاش طبي",
+          "quantity": "5 لفات",
+          "sizes": ["عرض 5 سم", "عرض 10 سم"],
+          "purpose": "لتثبيت الضمادات ولف الجروح",
+          "essential": true,
+          "childSpecific": false
+        },
+        {
+          "name": "لاصق طبي",
+          "nameArabic": "لاصق طبي",
+          "quantity": "2 لفة",
+          "sizes": ["عرض 2.5 سم"],
+          "purpose": "لتثبيت الضمادات والشاش",
+          "essential": true,
+          "childSpecific": false
+        },
+        {
+          "name": "قطن طبي",
+          "nameArabic": "قطن طبي",
+          "quantity": "عبوة واحدة",
+          "sizes": ["معقم"],
+          "purpose": "لتنظيف الجروح والتطهير",
+          "essential": true,
+          "childSpecific": false
+        },
+        {
+          "name": "مناديل مبللة معقمة",
+          "nameArabic": "مناديل مبللة معقمة",
+          "quantity": "عبوتان",
+          "sizes": ["للأطفال"],
+          "purpose": "لتنظيف اليدين والجروح البسيطة",
+          "essential": true,
+          "childSpecific": true
+        }
+      ]
+    },
+    {
+      "id": "medications",
+      "name": "الأدوية الأساسية",
+      "icon": "medication",
+      "color": "#2196F3",
+      "items": [
+        {
+          "name": "باراسيتامول للأطفال",
+          "nameArabic": "باراسيتامول للأطفال",
+          "quantity": "عبوة واحدة",
+          "sizes": ["شراب", "تحاميل"],
+          "purpose": "لخفض الحرارة وتسكين الألم",
+          "essential": true,
+          "childSpecific": true,
+          "dosage": "حسب الوزن والعمر",
+          "expiry": "تحقق من تاريخ الانتهاء كل 6 أشهر"
+        },
+        {
+          "name": "محلول معالجة الجفاف",
+          "nameArabic": "محلول معالجة الجفاف",
+          "quantity": "3-5 أكياس",
+          "sizes": ["للأطفال"],
+          "purpose": "لعلاج الجفاف الناتج عن الإسهال أو القيء",
+          "essential": true,
+          "childSpecific": true
+        },
+        {
+          "name": "مرهم مضاد حيوي",
+          "nameArabic": "مرهم مضاد حيوي",
+          "quantity": "أنبوب واحد",
+          "sizes": ["صغير"],
+          "purpose": "لمنع التهاب الجروح الصغيرة",
+          "essential": true,
+          "childSpecific": false
+        },
+        {
+          "name": "مضاد الهيستامين للأطفال",
+          "nameArabic": "مضاد الهيستامين للأطفال",
+          "quantity": "عبوة واحدة",
+          "sizes": ["شراب"],
+          "purpose": "لعلاج الحساسية والحكة",
+          "essential": false,
+          "childSpecific": true
+        }
+      ]
+    },
+    {
+      "id": "tools_equipment",
+      "name": "الأدوات والمعدات",
+      "icon": "build",
+      "color": "#FF9800",
+      "items": [
+        {
+          "name": "مقص طبي",
+          "nameArabic": "مقص طبي",
+          "quantity": "واحد",
+          "sizes": ["صغير"],
+          "purpose": "لقطع الشاش والضمادات",
+          "essential": true,
+          "childSpecific": false
+        },
+        {
+          "name": "ملقط طبي",
+          "nameArabic": "ملقط طبي",
+          "quantity": "واحد",
+          "sizes": ["صغير"],
+          "purpose": "لإزالة الشظايا والأجسام الغريبة",
+          "essential": true,
+          "childSpecific": false
+        },
+        {
+          "name": "ميزان حرارة رقمي",
+          "nameArabic": "ميزان حرارة رقمي",
+          "quantity": "واحد",
+          "sizes": ["للأطفال"],
+          "purpose": "لقياس درجة الحرارة",
+          "essential": true,
+          "childSpecific": true
+        },
+        {
+          "name": "قفازات طبية",
+          "nameArabic": "قفازات طبية",
+          "quantity": "5 أزواج",
+          "sizes": ["مختلفة"],
+          "purpose": "للحماية أثناء الإسعاف",
+          "essential": true,
+          "childSpecific": false
+        },
+        {
+          "name": "كشاف يدوي",
+          "nameArabic": "كشاف يدوي",
+          "quantity": "واحد",
+          "sizes": ["صغير"],
+          "purpose": "للإضاءة في حالات الطوارئ",
+          "essential": false,
+          "childSpecific": false
+        }
+      ]
+    },
+    {
+      "id": "emergency_items",
+      "name": "مستلزمات الطوارئ",
+      "icon": "emergency",
+      "color": "#F44336",
+      "items": [
+        {
+          "name": "أكياس ثلج فورية",
+          "nameArabic": "أكياس ثلج فورية",
+          "quantity": "2-3 أكياس",
+          "sizes": ["صغيرة"],
+          "purpose": "لتخفيف التورم والألم",
+          "essential": true,
+          "childSpecific": false
+        },
+        {
+          "name": "بطانية طوارئ",
+          "nameArabic": "بطانية طوارئ",
+          "quantity": "واحدة",
+          "sizes": ["صغيرة"],
+          "purpose": "للدفء في حالات الطوارئ",
+          "essential": false,
+          "childSpecific": false
+        },
+        {
+          "name": "أرقام الطوارئ",
+          "nameArabic": "أرقام الطوارئ",
+          "quantity": "بطاقة واحدة",
+          "sizes": ["مقاومة للماء"],
+          "purpose": "للاتصال السريع بالطوارئ",
+          "essential": true,
+          "childSpecific": false,
+          "numbers": ["14 - الطوارئ العامة", "1021 - الهلال الأحمر", "14 - الحماية المدنية"]
+        }
+      ]
+    },
+    {
+      "id": "special_needs",
+      "name": "احتياجات خاصة",
+      "icon": "child_care",
+      "color": "#9C27B0",
+      "items": [
+        {
+          "name": "أدوية الطفل الشخصية",
+          "nameArabic": "أدوية الطفل الشخصية",
+          "quantity": "حسب الحاجة",
+          "sizes": ["متنوعة"],
+          "purpose": "أدوية الحالات المزمنة (ربو، حساسية، إلخ)",
+          "essential": true,
+          "childSpecific": true,
+          "note": "تأكد من عدم انتهاء صلاحيتها"
+        },
+        {
+          "name": "حقنة بدون إبرة",
+          "nameArabic": "حقنة بدون إبرة",
+          "quantity": "2-3 قطع",
+          "sizes": ["5 مل", "10 مل"],
+          "purpose": "لإعطاء الأدوية السائلة للرضع",
+          "essential": false,
+          "childSpecific": true
+        },
+        {
+          "name": "كمامات للأطفال",
+          "nameArabic": "كمامات للأطفال",
+          "quantity": "5 قطع",
+          "sizes": ["للأطفال"],
+          "purpose": "للحماية من العدوى",
+          "essential": false,
+          "childSpecific": true
+        }
+      ]
+    }
+  ],
+  "maintenance": {
+    "title": "صيانة حقيبة الإسعافات الأولية",
+    "checkFrequency": "كل 3 أشهر",
+    "tasks": [
+      "تحقق من تواريخ انتهاء الصلاحية",
+      "استبدل المواد المستخدمة",
+      "تأكد من نظافة الحقيبة",
+      "تحقق من عمل الأدوات (ميزان الحرارة، الكشاف)",
+      "حدث أرقام الطوارئ إذا لزم الأمر"
+    ]
+  },
+  "locations": {
+    "title": "أماكن وضع حقيبة الإسعافات الأولية",
+    "recommendations": [
+      {
+        "location": "المنزل",
+        "details": "في مكان مرتفع بعيداً عن متناول الأطفال الصغار",
+        "accessibility": "سهل الوصول للبالغين"
+      },
+      {
+        "location": "السيارة",
+        "details": "في صندوق السيارة أو تحت المقعد",
+        "accessibility": "محمي من الحرارة والرطوبة"
+      },
+      {
+        "location": "مكان العمل",
+        "details": "في مكتب أو خزانة مخصصة",
+        "accessibility": "معروف لجميع أفراد الفريق"
+      }
+    ]
+  },
+  "tips": [
+    "تأكد من أن جميع أفراد الأسرة يعرفون مكان الحقيبة",
+    "احتفظ بدليل الإسعافات الأولية داخل الحقيبة",
+    "اكتب اسم وعمر كل طفل على بطاقة داخل الحقيبة",
+    "احتفظ بنسخة من بطاقات التأمين الصحي",
+    "تدرب على استخدام محتويات الحقيبة قبل الحاجة إليها"
+  ]
+}

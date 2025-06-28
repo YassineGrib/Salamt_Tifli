@@ -1,0 +1,112 @@
+{
+  "city": "سطيف",
+  "country": "الجزائر",
+  "pharmacies": [
+    {
+      "id": "pharmacie_centrale",
+      "name": "الصيدلية المركزية",
+      "name_arabic": "الصيدلية المركزية",
+      "address": "شارع الأمير عبد القادر، سطيف",
+      "phone": "036 84 12 30",
+      "latitude": 36.1919,
+      "longitude": 5.4133,
+      "working_hours": {
+        "monday": "08:00-19:00",
+        "tuesday": "08:00-19:00",
+        "wednesday": "08:00-19:00",
+        "thursday": "08:00-19:00",
+        "friday": "08:00-19:00",
+        "saturday": "08:00-13:00",
+        "sunday": "مغلقة"
+      },
+      "night_service": false,
+      "emergency_service": true
+    },
+    {
+      "id": "pharmacie_nuit_setif",
+      "name": "صيدلية الليل سطيف",
+      "name_arabic": "صيدلية الليل سطيف",
+      "address": "شارع العربي بن مهيدي، سطيف",
+      "phone": "036 85 45 60",
+      "latitude": 36.1900,
+      "longitude": 5.4100,
+      "working_hours": {
+        "monday": "20:00-08:00",
+        "tuesday": "20:00-08:00",
+        "wednesday": "20:00-08:00",
+        "thursday": "20:00-08:00",
+        "friday": "20:00-08:00",
+        "saturday": "20:00-08:00",
+        "sunday": "20:00-08:00"
+      },
+      "night_service": true,
+      "emergency_service": true
+    },
+    {
+      "id": "pharmacie_1000_logements",
+      "name": "صيدلية 1000 مسكن",
+      "name_arabic": "صيدلية 1000 مسكن",
+      "address": "حي 1000 مسكن، سطيف",
+      "phone": "036 93 25 80",
+      "latitude": 36.1750,
+      "longitude": 5.4250,
+      "working_hours": {
+        "monday": "08:00-18:00",
+        "tuesday": "08:00-18:00",
+        "wednesday": "08:00-18:00",
+        "thursday": "08:00-18:00",
+        "friday": "08:00-18:00",
+        "saturday": "08:00-13:00",
+        "sunday": "مغلقة"
+      },
+      "night_service": false,
+      "emergency_service": false
+    },
+    {
+      "id": "pharmacie_el_hidhab",
+      "name": "صيدلية الهضاب",
+      "name_arabic": "صيدلية الهضاب",
+      "address": "حي الهضاب، سطيف",
+      "phone": "036 87 90 15",
+      "latitude": 36.2000,
+      "longitude": 5.4300,
+      "working_hours": {
+        "monday": "08:00-19:00",
+        "tuesday": "08:00-19:00",
+        "wednesday": "08:00-19:00",
+        "thursday": "08:00-19:00",
+        "friday": "08:00-19:00",
+        "saturday": "08:00-13:00",
+        "sunday": "مغلقة"
+      },
+      "night_service": false,
+      "emergency_service": true
+    },
+    {
+      "id": "pharmacie_garde_weekend",
+      "name": "صيدلية المناوبة نهاية الأسبوع",
+      "name_arabic": "صيدلية المناوبة نهاية الأسبوع",
+      "address": "شارع الجمهورية، سطيف",
+      "phone": "036 82 35 70",
+      "latitude": 36.1880,
+      "longitude": 5.4150,
+      "working_hours": {
+        "monday": "مغلقة",
+        "tuesday": "مغلقة",
+        "wednesday": "مغلقة",
+        "thursday": "مغلقة",
+        "friday": "مغلقة",
+        "saturday": "08:00-20:00",
+        "sunday": "08:00-20:00"
+      },
+      "night_service": false,
+      "emergency_service": true,
+      "weekend_only": true
+    }
+  ],
+  "night_service_schedule": {
+    "rotation": "أسبوعية",
+    "info_phone": "036 84 00 00",
+    "description": "تتناوب الصيدليات على الخدمة الليلية أسبوعياً"
+  }
+}

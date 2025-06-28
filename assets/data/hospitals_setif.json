@@ -1,0 +1,102 @@
+{
+  "city": "سطيف",
+  "country": "الجزائر",
+  "hospitals": [
+    {
+      "id": "chu_setif",
+      "name": "المستشفى الجامعي سطيف",
+      "name_arabic": "المستشفى الجامعي سطيف",
+      "type": "public",
+      "specialties": ["طوارئ", "أطفال", "جراحة", "باطنية"],
+      "has_pediatric": true,
+      "has_emergency": true,
+      "address": "شارع الأخوين فرحات، سطيف",
+      "phone": "036 92 80 00",
+      "emergency_phone": "036 92 80 15",
+      "latitude": 36.1919,
+      "longitude": 5.4133,
+      "working_hours": {
+        "emergency": "24/7",
+        "general": "08:00-17:00"
+      }
+    },
+    {
+      "id": "hospital_enfants_setif",
+      "name": "مستشفى الأطفال سطيف",
+      "name_arabic": "مستشفى الأطفال سطيف",
+      "type": "public",
+      "specialties": ["أطفال", "طوارئ أطفال", "جراحة أطفال"],
+      "has_pediatric": true,
+      "has_emergency": true,
+      "address": "حي الزهور، سطيف",
+      "phone": "036 91 45 20",
+      "emergency_phone": "036 91 45 25",
+      "latitude": 36.1850,
+      "longitude": 5.4200,
+      "working_hours": {
+        "emergency": "24/7",
+        "general": "08:00-17:00"
+      }
+    },
+    {
+      "id": "clinique_ibn_sina",
+      "name": "عيادة ابن سينا",
+      "name_arabic": "عيادة ابن سينا",
+      "type": "private",
+      "specialties": ["أطفال", "طوارئ", "جراحة"],
+      "has_pediatric": true,
+      "has_emergency": true,
+      "address": "شارع العربي بن مهيدي، سطيف",
+      "phone": "036 84 25 30",
+      "emergency_phone": "036 84 25 35",
+      "latitude": 36.1900,
+      "longitude": 5.4100,
+      "working_hours": {
+        "emergency": "24/7",
+        "general": "08:00-20:00"
+      }
+    },
+    {
+      "id": "polyclinique_1000_logements",
+      "name": "عيادة متعددة الخدمات 1000 مسكن",
+      "name_arabic": "عيادة متعددة الخدمات 1000 مسكن",
+      "type": "public",
+      "specialties": ["أطفال", "طب عام", "طوارئ"],
+      "has_pediatric": true,
+      "has_emergency": true,
+      "address": "حي 1000 مسكن، سطيف",
+      "phone": "036 93 15 40",
+      "emergency_phone": "036 93 15 45",
+      "latitude": 36.1750,
+      "longitude": 5.4250,
+      "working_hours": {
+        "emergency": "24/7",
+        "general": "08:00-17:00"
+      }
+    },
+    {
+      "id": "clinique_el_amel",
+      "name": "عيادة الأمل",
+      "name_arabic": "عيادة الأمل",
+      "type": "private",
+      "specialties": ["أطفال", "نساء وتوليد", "طب عام"],
+      "has_pediatric": true,
+      "has_emergency": false,
+      "address": "شارع الاستقلال، سطيف",
+      "phone": "036 85 60 70",
+      "emergency_phone": null,
+      "latitude": 36.1920,
+      "longitude": 5.4080,
+      "working_hours": {
+        "emergency": null,
+        "general": "08:00-18:00"
+      }
+    }
+  ],
+  "emergency_numbers": {
+    "general_emergency": "14",
+    "red_crescent": "021 65 65 65",
+    "civil_protection": "14",
+    "police": "17"
+  }
+}

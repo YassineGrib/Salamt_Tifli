@@ -1,0 +1,189 @@
+{
+  "country": "الجزائر",
+  "schedule": [
+    {
+      "ageMonths": 0,
+      "ageDisplay": "عند الولادة",
+      "vaccines": [
+        {
+          "name": "BCG",
+          "nameArabic": "لقاح السل",
+          "description": "لقاح ضد مرض السل",
+          "mandatory": true
+        },
+        {
+          "name": "Hepatitis B",
+          "nameArabic": "لقاح التهاب الكبد ب",
+          "description": "لقاح ضد التهاب الكبد الفيروسي ب",
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "ageMonths": 1,
+      "ageDisplay": "شهر واحد",
+      "vaccines": [
+        {
+          "name": "Hepatitis B",
+          "nameArabic": "لقاح التهاب الكبد ب - الجرعة الثانية",
+          "description": "الجرعة الثانية من لقاح التهاب الكبد ب",
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "ageMonths": 2,
+      "ageDisplay": "شهرين",
+      "vaccines": [
+        {
+          "name": "OPV",
+          "nameArabic": "لقاح شلل الأطفال - الجرعة الأولى",
+          "description": "الجرعة الأولى من لقاح شلل الأطفال",
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "ageMonths": 3,
+      "ageDisplay": "3 أشهر",
+      "vaccines": [
+        {
+          "name": "DTP",
+          "nameArabic": "اللقاح الثلاثي - الجرعة الأولى",
+          "description": "الجرعة الأولى من لقاح الدفتيريا والسعال الديكي والكزاز",
+          "mandatory": true
+        },
+        {
+          "name": "Hib",
+          "nameArabic": "لقاح المستدمية النزلية - الجرعة الأولى",
+          "description": "الجرعة الأولى من لقاح المستدمية النزلية",
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "ageMonths": 4,
+      "ageDisplay": "4 أشهر",
+      "vaccines": [
+        {
+          "name": "OPV",
+          "nameArabic": "لقاح شلل الأطفال - الجرعة الثانية",
+          "description": "الجرعة الثانية من لقاح شلل الأطفال",
+          "mandatory": true
+        },
+        {
+          "name": "DTP",
+          "nameArabic": "اللقاح الثلاثي - الجرعة الثانية",
+          "description": "الجرعة الثانية من لقاح الدفتيريا والسعال الديكي والكزاز",
+          "mandatory": true
+        },
+        {
+          "name": "Hib",
+          "nameArabic": "لقاح المستدمية النزلية - الجرعة الثانية",
+          "description": "الجرعة الثانية من لقاح المستدمية النزلية",
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "ageMonths": 5,
+      "ageDisplay": "5 أشهر",
+      "vaccines": [
+        {
+          "name": "DTP",
+          "nameArabic": "اللقاح الثلاثي - الجرعة الثالثة",
+          "description": "الجرعة الثالثة من لقاح الدفتيريا والسعال الديكي والكزاز",
+          "mandatory": true
+        },
+        {
+          "name": "Hib",
+          "nameArabic": "لقاح المستدمية النزلية - الجرعة الثالثة",
+          "description": "الجرعة الثالثة من لقاح المستدمية النزلية",
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "ageMonths": 6,
+      "ageDisplay": "6 أشهر",
+      "vaccines": [
+        {
+          "name": "OPV",
+          "nameArabic": "لقاح شلل الأطفال - الجرعة الثالثة",
+          "description": "الجرعة الثالثة من لقاح شلل الأطفال",
+          "mandatory": true
+        },
+        {
+          "name": "Hepatitis B",
+          "nameArabic": "لقاح التهاب الكبد ب - الجرعة الثالثة",
+          "description": "الجرعة الثالثة من لقاح التهاب الكبد ب",
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "ageMonths": 11,
+      "ageDisplay": "11 شهر",
+      "vaccines": [
+        {
+          "name": "MMR",
+          "nameArabic": "لقاح الحصبة والحصبة الألمانية والنكاف - الجرعة الأولى",
+          "description": "الجرعة الأولى من لقاح الحصبة والحصبة الألمانية والنكاف",
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "ageMonths": 18,
+      "ageDisplay": "18 شهر",
+      "vaccines": [
+        {
+          "name": "OPV",
+          "nameArabic": "لقاح شلل الأطفال - الجرعة المنشطة الأولى",
+          "description": "الجرعة المنشطة الأولى من لقاح شلل الأطفال",
+          "mandatory": true
+        },
+        {
+          "name": "DTP",
+          "nameArabic": "اللقاح الثلاثي - الجرعة المنشطة الأولى",
+          "description": "الجرعة المنشطة الأولى من لقاح الدفتيريا والسعال الديكي والكزاز",
+          "mandatory": true
+        },
+        {
+          "name": "MMR",
+          "nameArabic": "لقاح الحصبة والحصبة الألمانية والنكاف - الجرعة الثانية",
+          "description": "الجرعة الثانية من لقاح الحصبة والحصبة الألمانية والنكاف",
+          "mandatory": true
+        },
+        {
+          "name": "Hib",
+          "nameArabic": "لقاح المستدمية النزلية - الجرعة المنشطة",
+          "description": "الجرعة المنشطة من لقاح المستدمية النزلية",
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "ageMonths": 72,
+      "ageDisplay": "6 سنوات",
+      "vaccines": [
+        {
+          "name": "OPV",
+          "nameArabic": "لقاح شلل الأطفال - الجرعة المنشطة الثانية",
+          "description": "الجرعة المنشطة الثانية من لقاح شلل الأطفال",
+          "mandatory": true
+        },
+        {
+          "name": "DTP",
+          "nameArabic": "اللقاح الثلاثي - الجرعة المنشطة الثانية",
+          "description": "الجرعة المنشطة الثانية من لقاح الدفتيريا والسعال الديكي والكزاز",
+          "mandatory": true
+        }
+      ]
+    }
+  ],
+  "reminders": {
+    "beforeDays": 7,
+    "message": "تذكير: موعد تطعيم طفلك قريب"
+  }
+}
