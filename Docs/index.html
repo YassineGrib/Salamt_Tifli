@@ -186,39 +186,249 @@
         /* Screenshots Section */
         .screenshots {
             padding: 80px 0;
-            background: #f8f9fa;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .screenshots::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #667eea, transparent);
+        }
+
+        .screenshots-container {
+            overflow-x: auto;
+            padding: 40px 0;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            position: relative;
+        }
+
+        .screenshots-container::-webkit-scrollbar {
+            display: none;
         }
 
         .screenshots-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
+            display: flex;
+            gap: 2.5rem;
+            min-width: max-content;
+            padding: 0 40px;
+            align-items: center;
         }
 
         .screenshot-card {
             background: white;
-            border-radius: 20px;
+            border-radius: 25px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            flex-shrink: 0;
+            width: 300px;
+            height: 600px;
+            position: relative;
+            border: 3px solid transparent;
+            display: flex;
+            flex-direction: column;
         }
 
         .screenshot-card:hover {
-            transform: scale(1.05);
+            transform: translateY(-15px) scale(1.05);
+            box-shadow: 0 30px 60px rgba(102, 126, 234, 0.3);
+            border-color: #667eea;
+        }
+
+        .screenshot-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            z-index: 2;
         }
 
         .screenshot-img {
             width: 100%;
-            height: 400px;
-            object-fit: cover;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+            background: #f8f9fa;
+        }
+
+        .screenshot-card:hover .screenshot-img {
+            transform: scale(1.1);
         }
 
         .screenshot-title {
             padding: 1.5rem;
             text-align: center;
-            font-weight: 600;
+            font-weight: 700;
             color: #333;
+            font-size: 1.1rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .screenshot-title::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #667eea;
+        }
+
+        /* Enhanced scroll navigation */
+        .scroll-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .scroll-btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.3rem;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .scroll-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .scroll-btn:hover::before {
+            left: 100%;
+        }
+
+        .scroll-btn:hover {
+            transform: scale(1.1) translateY(-2px);
+            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
+        }
+
+        .scroll-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .scroll-btn:disabled::before {
+            display: none;
+        }
+
+        /* Scroll indicators */
+        .scroll-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        .indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ddd;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .indicator.active {
+            background: #667eea;
+            transform: scale(1.2);
+        }
+
+        /* Section header enhancement */
+        .screenshots-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .screenshots-header h2 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #333;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .screenshots-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .screenshots-header p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .screenshots-grid {
+                gap: 1.5rem;
+                padding: 0 20px;
+            }
+
+            .screenshot-card {
+                width: 250px;
+                height: 500px;
+            }
+
+            .screenshot-img {
+                height: 100%;
+            }
+
+            .scroll-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 1.1rem;
+            }
+
+            .screenshots-header h2 {
+                font-size: 2.2rem;
+            }
         }
 
         /* Download Section */
@@ -331,40 +541,6 @@
             border-top: 1px solid #555;
             padding-top: 1rem;
             color: #999;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero p {
-                font-size: 1.1rem;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .btn {
-                width: 100%;
-                max-width: 300px;
-                justify-content: center;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .screenshots-grid {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            }
         }
 
         /* Animations */
@@ -501,36 +677,58 @@
     <!-- Screenshots Section -->
     <section class="screenshots">
         <div class="container">
-            <h2 class="section-title">شاشات التطبيق</h2>
-            <div class="screenshots-grid">
-                <div class="screenshot-card">
-                    <img src="screenshoots/شاشة الترحيب.png" alt="شاشة الترحيب" class="screenshot-img">
-                    <div class="screenshot-title">شاشة الترحيب</div>
+            <div class="screenshots-header">
+                <h2>شاشات التطبيق</h2>
+                <p>اكتشف واجهة تطبيق "سلامة طفلي" المميزة وسهلة الاستخدام</p>
+            </div>
+            <div class="screenshots-container">
+                <div class="screenshots-grid">
+                    <div class="screenshot-card">
+                        <img src="screenshoots/شاشة الترحيب.png" alt="شاشة الترحيب" class="screenshot-img">
+                        <div class="screenshot-title">شاشة الترحيب</div>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="screenshoots/الشاشة الرئيسية.png" alt="الشاشة الرئيسية" class="screenshot-img">
+                        <div class="screenshot-title">الشاشة الرئيسية</div>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="screenshoots/خدمة الطوارئ.png" alt="خدمة الطوارئ" class="screenshot-img">
+                        <div class="screenshot-title">خدمة الطوارئ</div>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="screenshoots/المكتبة التعليمية.png" alt="المكتبة التعليمية" class="screenshot-img">
+                        <div class="screenshot-title">المكتبة التعليمية</div>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="screenshoots/التقويم الصحي.png" alt="التقويم الصحي" class="screenshot-img">
+                        <div class="screenshot-title">التقويم الصحي</div>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="screenshoots/دليل الاسعافات الاولية.png" alt="دليل الإسعافات الأولية" class="screenshot-img">
+                        <div class="screenshot-title">دليل الإسعافات الأولية</div>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="screenshoots/شاشة الذكاء الاصطناعي.png" alt="شاشة الذكاء الاصطناعي" class="screenshot-img">
+                        <div class="screenshot-title">شاشة الذكاء الاصطناعي</div>
+                    </div>
                 </div>
-                <div class="screenshot-card">
-                    <img src="screenshoots/الشاشة الرئيسية.png" alt="الشاشة الرئيسية" class="screenshot-img">
-                    <div class="screenshot-title">الشاشة الرئيسية</div>
-                </div>
-                <div class="screenshot-card">
-                    <img src="screenshoots/خدمة الطوارئ.png" alt="خدمة الطوارئ" class="screenshot-img">
-                    <div class="screenshot-title">خدمة الطوارئ</div>
-                </div>
-                <div class="screenshot-card">
-                    <img src="screenshoots/المكتبة التعليمية.png" alt="المكتبة التعليمية" class="screenshot-img">
-                    <div class="screenshot-title">المكتبة التعليمية</div>
-                </div>
-                <div class="screenshot-card">
-                    <img src="screenshoots/التقويم الصحي.png" alt="التقويم الصحي" class="screenshot-img">
-                    <div class="screenshot-title">التقويم الصحي</div>
-                </div>
-                <div class="screenshot-card">
-                    <img src="screenshoots/دليل الاسعافات الاولية.png" alt="دليل الإسعافات الأولية" class="screenshot-img">
-                    <div class="screenshot-title">دليل الإسعافات الأولية</div>
-                </div>
-                <div class="screenshot-card">
-                    <img src="screenshoots/شاشة الذكاء الاصطناعي.png" alt="شاشة الذكاء الاصطناعي" class="screenshot-img">
-                    <div class="screenshot-title">شاشة الذكاء الاصطناعي</div>
-                </div>
+            </div>
+            <div class="scroll-nav">
+                <button class="scroll-btn" onclick="scrollLeft()" title="السابق">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <button class="scroll-btn" onclick="scrollRight()" title="التالي">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+            <div class="scroll-indicators">
+                <span class="indicator active" onclick="scrollToSlide(0)"></span>
+                <span class="indicator" onclick="scrollToSlide(1)"></span>
+                <span class="indicator" onclick="scrollToSlide(2)"></span>
+                <span class="indicator" onclick="scrollToSlide(3)"></span>
+                <span class="indicator" onclick="scrollToSlide(4)"></span>
+                <span class="indicator" onclick="scrollToSlide(5)"></span>
+                <span class="indicator" onclick="scrollToSlide(6)"></span>
             </div>
         </div>
     </section>
@@ -660,6 +858,107 @@
         document.querySelector('a[href*="app-release.apk"]').addEventListener('click', function() {
             // You can add analytics tracking here
             console.log('App download initiated');
+        });
+
+        // Scroll functionality - wait for DOM to load
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.querySelector('.screenshots-container');
+            const scrollBtns = document.querySelectorAll('.scroll-btn');
+            const indicators = document.querySelectorAll('.indicator');
+            const cards = document.querySelectorAll('.screenshot-card');
+
+            if (container && scrollBtns.length > 0) {
+                function scrollLeft() {
+                    container.scrollBy({
+                        left: -320,
+                        behavior: 'smooth'
+                    });
+                }
+
+                function scrollRight() {
+                    container.scrollBy({
+                        left: 320,
+                        behavior: 'smooth'
+                    });
+                }
+
+                function scrollToSlide(index) {
+                    const cardWidth = 320; // card width + gap
+                    container.scrollTo({
+                        left: index * cardWidth,
+                        behavior: 'smooth'
+                    });
+                }
+
+                // Make functions globally available
+                window.scrollLeft = scrollLeft;
+                window.scrollRight = scrollRight;
+                window.scrollToSlide = scrollToSlide;
+
+                // Update button states and indicators based on scroll position
+                function updateScrollState() {
+                    const scrollLeft = container.scrollLeft;
+                    const maxScroll = container.scrollWidth - container.clientWidth;
+                    
+                    // Update button states
+                    scrollBtns[0].disabled = scrollLeft === 0;
+                    scrollBtns[1].disabled = scrollLeft >= maxScroll;
+                    
+                    // Update indicators
+                    const currentIndex = Math.round(scrollLeft / 320);
+                    indicators.forEach((indicator, index) => {
+                        indicator.classList.toggle('active', index === currentIndex);
+                    });
+                }
+
+                container.addEventListener('scroll', updateScrollState);
+
+                // Initialize states
+                updateScrollState();
+
+                // Add click handlers for indicators
+                indicators.forEach((indicator, index) => {
+                    indicator.addEventListener('click', () => scrollToSlide(index));
+                });
+
+                // Add keyboard navigation
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'ArrowLeft') {
+                        scrollRight();
+                    } else if (e.key === 'ArrowRight') {
+                        scrollLeft();
+                    }
+                });
+
+                // Add touch/swipe support
+                let startX = 0;
+                let isDragging = false;
+
+                container.addEventListener('touchstart', function(e) {
+                    startX = e.touches[0].clientX;
+                    isDragging = true;
+                });
+
+                container.addEventListener('touchmove', function(e) {
+                    if (!isDragging) return;
+                    e.preventDefault();
+                });
+
+                container.addEventListener('touchend', function(e) {
+                    if (!isDragging) return;
+                    isDragging = false;
+                    const endX = e.changedTouches[0].clientX;
+                    const diff = startX - endX;
+                    
+                    if (Math.abs(diff) > 50) {
+                        if (diff > 0) {
+                            scrollRight();
+                        } else {
+                            scrollLeft();
+                        }
+                    }
+                });
+            }
         });
     </script>
 </body>
