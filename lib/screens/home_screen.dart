@@ -12,6 +12,7 @@ import '../widgets/emergency_button.dart';
 import '../widgets/tips_slider.dart';
 import '../widgets/animated_ai_assistant.dart';
 import '../services/auth_service.dart';
+import '../screens/subscription_simulation_screen.dart';
 
 /// Main home screen of the application
 class HomeScreen extends StatefulWidget {
@@ -269,6 +270,12 @@ class _HomeScreenState extends State<HomeScreen> {
                         color: AppColors.primaryGreen,
                         onTap: () => _navigateToProfiles(context),
                       ),
+                      FeatureCard(
+                        title: 'الاشتراك',
+                        icon: Icons.payment,
+                        color: AppColors.primaryBlue,
+                        onTap: () => _navigateToSubscription(context),
+                      ),
                     ],
                   ),
                 ],
@@ -316,6 +323,12 @@ class _HomeScreenState extends State<HomeScreen> {
   void _navigateToProfiles(BuildContext context) {
     Navigator.of(context).push(
       MaterialPageRoute(builder: (context) => const ChildProfilesScreen()),
+    );
+  }
+
+  void _navigateToSubscription(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (context) => SubscriptionSimulationScreen()),
     );
   }
 

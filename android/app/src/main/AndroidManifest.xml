@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="salamt_tifli"
+        android:label="Salamt Tifli"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
