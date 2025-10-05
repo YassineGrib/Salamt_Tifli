@@ -4,9 +4,7 @@ class SubscriptionSimulationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('محاكاة الدفع'),
-      ),
+      appBar: AppBar(title: Text('محاكاة الدفع')),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(

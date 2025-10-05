@@ -17,7 +17,7 @@ class _LoginScreenState extends State<LoginScreen> {
   final _formKey = GlobalKey<FormState>();
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
-  
+
   bool _isLoading = false;
   bool _obscurePassword = true;
   bool _rememberMe = false;
@@ -51,7 +51,9 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Card(
                 elevation: 8,
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(AppConstants.borderRadius),
+                  borderRadius: BorderRadius.circular(
+                    AppConstants.borderRadius,
+                  ),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(AppConstants.largePadding),
@@ -74,9 +76,9 @@ class _LoginScreenState extends State<LoginScreen> {
                             color: AppColors.primaryBlue,
                           ),
                         ),
-                        
+
                         const SizedBox(height: AppConstants.largePadding),
-                        
+
                         // Title
                         const Text(
                           'تسجيل الدخول',
@@ -86,9 +88,9 @@ class _LoginScreenState extends State<LoginScreen> {
                             color: AppColors.textPrimary,
                           ),
                         ),
-                        
+
                         const SizedBox(height: AppConstants.smallPadding),
-                        
+
                         const Text(
                           'مرحباً بك في سلامة طفلي',
                           style: TextStyle(
@@ -96,9 +98,9 @@ class _LoginScreenState extends State<LoginScreen> {
                             color: AppColors.textSecondary,
                           ),
                         ),
-                        
+
                         const SizedBox(height: AppConstants.largePadding),
-                        
+
                         // Email Field
                         TextFormField(
                           controller: _emailController,
@@ -119,9 +121,9 @@ class _LoginScreenState extends State<LoginScreen> {
                             return null;
                           },
                         ),
-                        
+
                         const SizedBox(height: AppConstants.defaultPadding),
-                        
+
                         // Password Field
                         TextFormField(
                           controller: _passwordController,
@@ -131,7 +133,9 @@ class _LoginScreenState extends State<LoginScreen> {
                             prefixIcon: const Icon(Icons.lock),
                             suffixIcon: IconButton(
                               icon: Icon(
-                                _obscurePassword ? Icons.visibility : Icons.visibility_off,
+                                _obscurePassword
+                                    ? Icons.visibility
+                                    : Icons.visibility_off,
                               ),
                               onPressed: () {
                                 setState(() {
@@ -150,9 +154,9 @@ class _LoginScreenState extends State<LoginScreen> {
                             return null;
                           },
                         ),
-                        
+
                         const SizedBox(height: AppConstants.defaultPadding),
-                        
+
                         // Remember Me & Forgot Password
                         Row(
                           children: [
@@ -172,9 +176,9 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                           ],
                         ),
-                        
+
                         const SizedBox(height: AppConstants.largePadding),
-                        
+
                         // Login Button
                         SizedBox(
                           width: double.infinity,
@@ -202,16 +206,18 @@ class _LoginScreenState extends State<LoginScreen> {
                                   ),
                           ),
                         ),
-                        
+
                         const SizedBox(height: AppConstants.defaultPadding),
-                        
+
                         // Demo Login Button
                         SizedBox(
                           width: double.infinity,
                           child: OutlinedButton(
                             onPressed: _isLoading ? null : _demoLogin,
                             style: OutlinedButton.styleFrom(
-                              side: const BorderSide(color: AppColors.primaryBlue),
+                              side: const BorderSide(
+                                color: AppColors.primaryBlue,
+                              ),
                               padding: const EdgeInsets.symmetric(vertical: 16),
                             ),
                             child: const Text(
@@ -224,9 +230,9 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                           ),
                         ),
-                        
+
                         const SizedBox(height: AppConstants.largePadding),
-                        
+
                         // Register Link
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -236,15 +242,14 @@ class _LoginScreenState extends State<LoginScreen> {
                               onPressed: () {
                                 Navigator.of(context).push(
                                   MaterialPageRoute(
-                                    builder: (context) => const RegisterScreen(),
+                                    builder: (context) =>
+                                        const RegisterScreen(),
                                   ),
                                 );
                               },
                               child: const Text(
                                 'إنشاء حساب جديد',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
+                                style: TextStyle(fontWeight: FontWeight.bold),
                               ),
                             ),
                           ],
@@ -313,9 +318,7 @@ class _LoginScreenState extends State<LoginScreen> {
       if (result.isSuccess) {
         if (mounted) {
           Navigator.of(context).pushReplacement(
-            MaterialPageRoute(
-              builder: (context) => const WelcomeScreen(),
-            ),
+            MaterialPageRoute(builder: (context) => const WelcomeScreen()),
           );
         }
       } else {
@@ -339,7 +342,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   void _showForgotPasswordDialog() {
     final emailController = TextEditingController();
-    
+
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
@@ -370,18 +373,18 @@ class _LoginScreenState extends State<LoginScreen> {
                 final result = await AuthService.instance.resetPassword(
                   emailController.text.trim(),
                 );
-                
+
                 if (mounted) {
                   Navigator.of(context).pop();
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
                       content: Text(
-                        result.isSuccess 
+                        result.isSuccess
                             ? result.message ?? 'تم إرسال رابط إعادة التعيين'
                             : result.error ?? 'حدث خطأ',
                       ),
-                      backgroundColor: result.isSuccess 
-                          ? AppColors.success 
+                      backgroundColor: result.isSuccess
+                          ? AppColors.success
                           : AppColors.error,
                     ),
                   );

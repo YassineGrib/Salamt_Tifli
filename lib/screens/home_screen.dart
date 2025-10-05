@@ -23,7 +23,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -93,33 +92,29 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Column(
                 children: [
                   // App Icon with animation
-//                   TweenAnimationBuilder<double>(
-//                     duration: const Duration(seconds: 2),
-//                     tween: Tween(begin: 0.0, end: 1.0),
-//                     builder: (context, value, child) {
-//                       return Transform.scale(
-//                         scale: 0.8 + (0.2 * value),
-// // 
-//                         child: Container(
-//                           padding: const EdgeInsets.all(16),
-//                           decoration: BoxDecoration(
-//                             color: Colors.white.withOpacity(0.2),
-//                             shape: BoxShape.circle,
-//                           ),
-//                           child: const Icon(
-//                             Icons.child_care,
-//                             size: 50,
-//                             color: Colors.white,
-//                           )
+                  //                   TweenAnimationBuilder<double>(
+                  //                     duration: const Duration(seconds: 2),
+                  //                     tween: Tween(begin: 0.0, end: 1.0),
+                  //                     builder: (context, value, child) {
+                  //                       return Transform.scale(
+                  //                         scale: 0.8 + (0.2 * value),
+                  // //
+                  //                         child: Container(
+                  //                           padding: const EdgeInsets.all(16),
+                  //                           decoration: BoxDecoration(
+                  //                             color: Colors.white.withOpacity(0.2),
+                  //                             shape: BoxShape.circle,
+                  //                           ),
+                  //                           child: const Icon(
+                  //                             Icons.child_care,
+                  //                             size: 50,
+                  //                             color: Colors.white,
+                  //                           )
 
-
-//                         ),
-//                       );
-//                     },
-//                   ),
-
-
-
+                  //                         ),
+                  //                       );
+                  //                     },
+                  //                   ),
                   const SizedBox(height: AppConstants.defaultPadding),
                   Text(
                     'مرحباً بك في سلامة طفلي',
@@ -133,10 +128,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   const SizedBox(height: AppConstants.smallPadding),
                   Text(
                     'تطبيق شامل لحماية الأطفال وصحتهم في الجزائر',
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.white70,
-                    ),
+                    style: TextStyle(fontSize: 16, color: Colors.white70),
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: AppConstants.defaultPadding),
@@ -144,7 +136,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      _buildQuickStat('دليل شامل', '6 أقسام', Icons.medical_services),
+                      _buildQuickStat(
+                        'دليل شامل',
+                        '6 أقسام',
+                        Icons.medical_services,
+                      ),
                       _buildQuickStat('متاح دائماً', '24/7', Icons.access_time),
                       _buildQuickStat('مجاني', '100%', Icons.favorite),
                     ],
@@ -161,15 +157,15 @@ class _HomeScreenState extends State<HomeScreen> {
             // const SizedBox(height: AppConstants.largePadding),
 
             // AI Assistant Section
-            AnimatedAIAssistant(
-              onTap: () => _navigateToAIChat(context),
-            ),
+            AnimatedAIAssistant(onTap: () => _navigateToAIChat(context)),
 
             const SizedBox(height: AppConstants.largePadding),
 
             // Emergency Section
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: AppConstants.defaultPadding),
+              padding: const EdgeInsets.symmetric(
+                horizontal: AppConstants.defaultPadding,
+              ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -213,7 +209,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
             // Main Features Section
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: AppConstants.defaultPadding),
+              padding: const EdgeInsets.symmetric(
+                horizontal: AppConstants.defaultPadding,
+              ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -315,9 +313,9 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void _navigateToAIChat(BuildContext context) {
-    Navigator.of(context).push(
-      MaterialPageRoute(builder: (context) => const AIChatScreen()),
-    );
+    Navigator.of(
+      context,
+    ).push(MaterialPageRoute(builder: (context) => const AIChatScreen()));
   }
 
   void _navigateToProfiles(BuildContext context) {
@@ -367,11 +365,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget _buildQuickStat(String title, String value, IconData icon) {
     return Column(
       children: [
-        Icon(
-          icon,
-          color: Colors.white,
-          size: 20,
-        ),
+        Icon(icon, color: Colors.white, size: 20),
         const SizedBox(height: 4),
         Text(
           value,
@@ -383,10 +377,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         Text(
           title,
-          style: const TextStyle(
-            color: Colors.white70,
-            fontSize: 10,
-          ),
+          style: const TextStyle(color: Colors.white70, fontSize: 10),
         ),
       ],
     );
@@ -408,18 +399,15 @@ class _HomeScreenState extends State<HomeScreen> {
               },
             ),
             ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.error,
-              ),
+              style: ElevatedButton.styleFrom(backgroundColor: AppColors.error),
               child: const Text('تسجيل الخروج'),
               onPressed: () async {
                 Navigator.of(context).pop();
                 await AuthService.instance.logout();
                 if (context.mounted) {
-                  Navigator.of(context).pushNamedAndRemoveUntil(
-                    '/login',
-                    (route) => false,
-                  );
+                  Navigator.of(
+                    context,
+                  ).pushNamedAndRemoveUntil('/login', (route) => false);
                 }
               },
             ),
